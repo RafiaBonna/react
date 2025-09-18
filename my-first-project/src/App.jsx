@@ -1,9 +1,13 @@
 import React from 'react';
+import FirstPage from './FirstPage';
+import Secondpage from './Secondpage';
 
 const App = () => {
   return (
     <div>
-      <h2>Good Days!</h2>
+      <FirstPage/>
+      <h2>Good Days are coming!</h2>
+      <Secondpage/>
     </div>
   );
 };
