@@ -7,7 +7,7 @@ const InternalCss = () => {
     }
     return (
         <div>
-            <h1 style={child}>There is always a way</h1>
+            <h1 style={child}>There is always a way!</h1>
         </div>
     );
 };
