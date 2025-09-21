@@ -4,13 +4,16 @@ import { BrowserRouter, Routes, Route } from "react-router";
 import HomePage from './pages/HomePage';
 import AboutUs from './pages/AboutUs';
 import ContactUs from './pages/ContactUs';
+import Gallery from './pages/Gallery';
 const App = () => {
   return (
     <div>
        <BrowserRouter>
     <Routes>
       <Route path="/" element={<HomePage />} />
-      <Route path="/about" element={<AboutUs />} />
+      <Route path="/about" element={<AboutUs />}>
+      <Route path="gallery" element={<Gallery />} />
+      </Route>
       <Route path="/contact" element={<ContactUs />} />
     </Routes>
   </BrowserRouter>,

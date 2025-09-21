@@ -1,11 +1,22 @@
 import React from 'react';
 import Nav from '../components/Nav';
+
+
+import {Link, Outlet} from "react-router";
 const AboutUs = () => {
     return (
         <div>
             <Nav/>
-            <h1>This is a About Page!</h1>
+            <nav>
+             <ul>
+            <li>
+                <Link to="gallery">Gallery</Link>
+            </li>
+            </ul>
+            </nav>
+           <Outlet/>
         </div>
+        
     );
 };
 
