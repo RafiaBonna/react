@@ -7,7 +7,7 @@ const Gallery = () => {
     return (
         <div>
            
-        <h2>This is a gallery</h2>
+        <h2>This is a blank gallery</h2>
         </div>
     );
 };
