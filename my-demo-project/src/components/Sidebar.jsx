@@ -1,7 +1,7 @@
 function Sidebar() {
   return (
     <div className="bg-light p-3" style={{ minHeight: "400px" }}>
-      <h5>Sidebar</h5>
+      <h5>Information</h5>
       <ul className="list-unstyled">
         <li><a href="#">Page1</a></li>
         <li><a href="#">Page2</a></li>
