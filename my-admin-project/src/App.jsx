@@ -1,20 +1,18 @@
 import React from 'react';
 import ReactDOM from "react-dom/client";
 import { BrowserRouter, Routes, Route } from "react-router";
-import Footer from './components/Footer';
-import Navbar from './components/Navbar';
 import Master from './pages/Master';
-import Header from './components/Header';
-import Sidebar from './components/Sidebar';
+import AddCategory from './pages/category/AddCategory';
+import ManageCategory from './pages/category/ManageCategory';
 const App = () => {
   return (
     <div>
       <BrowserRouter>
     <Routes>
       <Route path="/" element={<Master />} />
-      <Route path="" element={<Header />} />
-      <Route path="/" element={<Footer />} />
-      <Route path="/" element={<Sidebar />} />
+      <Route path="add-cat" element={<AddCategory/>} />
+      <Route path="/manage-cat" element={<ManageCategory />} />
+      
     </Routes>
   </BrowserRouter>,
     </div>

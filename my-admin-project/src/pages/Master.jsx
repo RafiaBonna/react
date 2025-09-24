@@ -1,12 +1,12 @@
 import React from 'react';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
-import Sidebar from '../components/Sidebar';
+import Sidebar from '../components/SideBaar';
 
 const Master = () => {
     return (
        <div>
-      {/* <!-- Site wrapper --> */}
+      {/* */}
       <div className="wrapper">
         {/* Navbar */}
        <Navbar />
