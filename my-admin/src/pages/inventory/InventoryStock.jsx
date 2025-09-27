@@ -12,7 +12,7 @@ const Sidebar = () => {
               className="brand-image img-circle elevation-3"
               style={{ opacity: ".8" }}
             />
-            <span className="brand-text font-weight-light">BunnyBuy 🐰</span>
+            <span className="brand-text font-weight-light">AdminLTE 3</span>
           </a>
           {/* Sidebar */}
           <div className="sidebar">
@@ -20,14 +20,14 @@ const Sidebar = () => {
             <div className="user-panel mt-3 pb-3 mb-3 d-flex">
               <div className="image">
                 <img
-                  src="assets-admin/dist/img/photo3.jpg"
+                  src="assets-admin/dist/img/user2-160x160.jpg"
                   className="img-circle elevation-2"
                   alt="User Image"
                 />
               </div>
               <div className="info">
                 <a href="#" className="d-block">
-                  Rafia Hawlader
+                  Alexander Pierce
                 </a>
               </div>
             </div>
@@ -197,33 +197,6 @@ const Sidebar = () => {
                   </ul>
                 </li>
                 {/* ================================== */}
-                {/* === FINANCE MENU (2 items: Invoices & Refunds) === */}
-                <li className="nav-header">FINANCE & ACCOUNTING</li>
-                <li className="nav-item has-treeview">
-                  <a href="#" className="nav-link">
-                    <i className="nav-icon fas fa-dollar-sign" />
-                    <p>
-                      Finance
-                      <i className="fas fa-angle-left right" />
-                    </p>
-                  </a>
-                  <ul className="nav nav-treeview">
-                    <li className="nav-item">
-                      <Link to="/manage-invoices" className="nav-link">
-                        <i className="far fa-circle nav-icon" />
-                        <p>Manage Expenses</p>
-                      </Link>
-                    </li>
-                    <li className="nav-item">
-                      <Link to="/manage-refunds" className="nav-link">
-                        <i className="far fa-circle nav-icon" />
-                        <p>Manage Refunds</p>
-                      </Link>
-                    </li>
-                  </ul>
-                </li>
-                {/* ================================== */}
-                
 
                 {/* === REPORTS MENU === */}
                 <li className="nav-header">REPORTING & ANALYTICS</li>
@@ -256,7 +229,6 @@ const Sidebar = () => {
                     </li>
                   </ul>
                 </li>
-               
                 {/* ================================== */}
 
                 <li className="nav-header">MISCELLANEOUS</li>
