@@ -12,7 +12,7 @@ const Sidebar = () => {
               className="brand-image img-circle elevation-3"
               style={{ opacity: ".8" }}
             />
-            <span className="brand-text font-weight-light">BunnyBuy 🐰</span>
+            <span className="brand-text font-weight-light">BuyBuddy</span>
           </a>
           {/* Sidebar */}
           <div className="sidebar">
@@ -211,13 +211,13 @@ const Sidebar = () => {
                     <li className="nav-item">
                       <Link to="/manage-invoices" className="nav-link">
                         <i className="far fa-circle nav-icon" />
-                        <p>Manage Expenses</p>
+                        <p>Manage Invoices</p>
                       </Link>
                     </li>
                     <li className="nav-item">
                       <Link to="/manage-refunds" className="nav-link">
                         <i className="far fa-circle nav-icon" />
-                        <p>Manage Refunds</p>
+                        <p>Manage Expenses</p>
                       </Link>
                     </li>
                   </ul>

@@ -1,249 +1,70 @@
-import React from 'react';
-import { Link } from "react-router-dom";
-const Sidebar = () => {
-    return (
-        <div>
-            <aside className="main-sidebar sidebar-dark-primary elevation-4">
-          {/* Brand Logo */}
-          <a href="../../index3.html" className="brand-link">
-            <img
-              src="assets-admin/dist/img/AdminLTELogo.png"
-              alt="AdminLTE Logo"
-              className="brand-image img-circle elevation-3"
-              style={{ opacity: ".8" }}
-            />
-            <span className="brand-text font-weight-light">AdminLTE 3</span>
-          </a>
-          {/* Sidebar */}
-          <div className="sidebar">
-            {/* Sidebar user (optional) */}
-            <div className="user-panel mt-3 pb-3 mb-3 d-flex">
-              <div className="image">
-                <img
-                  src="assets-admin/dist/img/user2-160x160.jpg"
-                  className="img-circle elevation-2"
-                  alt="User Image"
-                />
-              </div>
-              <div className="info">
-                <a href="#" className="d-block">
-                  Alexander Pierce
-                </a>
-              </div>
-            </div>
-            {/* SidebarSearch Form */}
-            <div className="form-inline">
-              <div className="input-group" data-widget="sidebar-search">
-                <input
-                  className="form-control form-control-sidebar"
-                  type="search"
-                  placeholder="Search"
-                  aria-label="Search"
-                />
-                <div className="input-group-append">
-                  <button className="btn btn-sidebar">
-                    <i className="fas fa-search fa-fw" />
-                  </button>
+import React from "react";
+import Navbar from './../../component/Navbar'; 
+import Sidebar from "./../../component/Sidebar"; 
+import Footer from "./../../component/Footer"; 
+
+const InventoryStock = () => {
+  return (
+    <div>
+      <div className="wrapper">
+        <Navbar />
+        <Sidebar />
+        <div className="content-wrapper">
+          <section className="content-header">
+            <div className="container-fluid">
+              <div className="row mb-2">
+                <div className="col-sm-6">
+                  <h1>Inventory Stock Overview</h1>
+                  <ol className="breadcrumb float-sm-right">
+                    <li className="breadcrumb-item"><a href="#">Inventory</a></li>
+                    <li className="breadcrumb-item active">Stock</li>
+                  </ol>
                 </div>
               </div>
             </div>
-            {/* Sidebar Menu */}
-            <nav className="mt-2">
-              <ul
-                className="nav nav-pills nav-sidebar flex-column"
-                data-widget="treeview"
-                role="menu"
-                data-accordion="false"
-              >
-                {/* User Management Menu (Existing) */}
-                <li className="nav-item">
-                  <a href="#" className="nav-link">
-                    <i className="nav-icon fas fa-users" />
-                    <p>
-                      User Management
-                      <i className="fas fa-angle-left right" />
-                    </p>
-                  </a>
-                  <ul className="nav nav-treeview">
-                    <li className="nav-item">
-                      <Link to="/add-user" className="nav-link">
-                        <i className="far fa-circle nav-icon" />
-                        <p>Add User</p>
-                      </Link>
-                    </li>
-                    <li className="nav-item">
-                      <Link to="/manage-user" className="nav-link">
-                        <i className="far fa-circle nav-icon" />
-                        <p>Manage Users</p>
-                      </Link>
-                    </li>
-                  </ul>
-                </li>
-                 
-                {/* Category Menu (Existing) */}
-                <li className="nav-item">
-                  <a href="#" className="nav-link">
-                    <i className="nav-icon fas fa-book" />
-                    <p>
-                      Category
-                      <i className="fas fa-angle-left right" />
-                    </p>
-                  </a>
-                  <ul className="nav nav-treeview">
-                    <li className="nav-item">
-                      <Link to="/add-cat" className="nav-link">
-                        <i className="far fa-circle nav-icon" />
-                        <p>Add Category</p>
-                      </Link>
-                    </li>
-                    <li className="nav-item">
-                      <Link to="/manage-cat" className="nav-link">
-                        <i className="far fa-circle nav-icon" />
-                        <p>Manage Category</p>
-                      </Link>
-                    </li>
-                  </ul>
-                </li>
-                
-                {/* === CATALOG MENU === */}
-                <li className="nav-header">PRODUCT CATALOG</li>
-                <li className="nav-item">
-                  <a href="#" className="nav-link">
-                    <i className="nav-icon fas fa-box-open" />
-                    <p>
-                      Catalog
-                      <i className="fas fa-angle-left right" />
-                    </p>
-                  </a>
-                  <ul className="nav nav-treeview">
-                    <li className="nav-item">
-                      <Link to="/add-product" className="nav-link">
-                        <i className="far fa-circle nav-icon" />
-                        <p>Add Product</p>
-                      </Link>
-                    </li>
-                    <li className="nav-item">
-                      <Link to="/manage-products" className="nav-link">
-                        <i className="far fa-circle nav-icon" />
-                        <p>Manage Products</p>
-                      </Link>
-                    </li>
-                     <li className="nav-item">
-                      <Link to="/manage-brands" className="nav-link">
-                        <i className="far fa-circle nav-icon" />
-                        <p>Manage Brands</p>
-                      </Link>
-                    </li>
-                  </ul>
-                </li>
-                {/* ================================= */}
-
-                {/* === ORDERS MENU === */}
-                <li className="nav-header">ORDER MANAGEMENT</li>
-                <li className="nav-item has-treeview">
-                  <a href="#" className="nav-link">
-                    <i className="nav-icon fas fa-shopping-cart" />
-                    <p>
-                      Orders
-                      <i className="fas fa-angle-left right" />
-                    </p>
-                  </a> 
-                  <ul className="nav nav-treeview">
-                    <li className="nav-item">
-                      <Link to="/manage-orders" className="nav-link">
-                        <i className="far fa-circle nav-icon" />
-                        <p>Manage Orders</p>
-                      </Link>
-                    </li>
-                    <li className="nav-item">
-                      <Link to="/manage-returns" className="nav-link">
-                        <i className="far fa-circle nav-icon" />
-                        <p>Manage Returns</p>
-                      </Link>
-                    </li>
-                  </ul>
-                </li>
-                {/* ================================= */}
-
-                {/* === INVENTORY MENU === */}
-                <li className="nav-header">INVENTORY MANAGEMENT</li>
-                <li className="nav-item has-treeview">
-                  <a href="#" className="nav-link">
-                    <i className="nav-icon fas fa-warehouse" />
-                    <p>
-                      Inventory
-                      <i className="fas fa-angle-left right" />
-                    </p>
-                  </a>
-                  <ul className="nav nav-treeview">
-                    <li className="nav-item">
-                      <Link to="/inventory-stock" className="nav-link">
-                        <i className="far fa-circle nav-icon" />
-                        <p>Inventory Stock</p>
-                      </Link>
-                    </li>
-                    <li className="nav-item">
-                      <Link to="/manage-purchases" className="nav-link">
-                        <i className="far fa-circle nav-icon" />
-                        <p>Manage Purchases</p>
-                      </Link>
-                    </li>
-                    <li className="nav-item">
-                      <Link to="/manage-suppliers" className="nav-link">
-                        <i className="far fa-circle nav-icon" />
-                        <p>Manage Suppliers</p>
-                      </Link>
-                    </li>
-                  </ul>
-                </li>
-                {/* ================================== */}
-
-                {/* === REPORTS MENU === */}
-                <li className="nav-header">REPORTING & ANALYTICS</li>
-                <li className="nav-item has-treeview">
-                  <a href="#" className="nav-link">
-                    <i className="nav-icon fas fa-chart-line" />
-                    <p>
-                      Reports
-                      <i className="fas fa-angle-left right" />
-                    </p>
-                  </a>
-                  <ul className="nav nav-treeview">
-                    <li className="nav-item">
-                      <Link to="/sales-report" className="nav-link">
-                        <i className="far fa-circle nav-icon" />
-                        <p>Sales Report</p>
-                      </Link>
-                    </li>
-                    <li className="nav-item">
-                      <Link to="/stock-report" className="nav-link">
-                        <i className="far fa-circle nav-icon" />
-                        <p>Stock Report</p>
-                      </Link>
-                    </li>
-                     <li className="nav-item">
-                      <Link to="/user-activity" className="nav-link">
-                        <i className="far fa-circle nav-icon" />
-                        <p>User Activity</p>
-                      </Link>
-                    </li>
-                  </ul>
-                </li>
-                {/* ================================== */}
-
-                <li className="nav-header">MISCELLANEOUS</li>
-               
-                <li className="nav-header">MULTI LEVEL EXAMPLE</li>
-               
-               
-              </ul>
-            </nav>
-            {/* /.sidebar-menu */}
-          </div>
-          {/* /.sidebar */}
-        </aside>
+          </section>
+          
+          <section className="content">
+            <div className="card">
+              <div className="card-header">
+                  <h3 className="card-title">Current Stock Status</h3>
+              </div>
+              <div className="card-body">
+                <table className="table table-bordered">
+                  <thead>
+                    <tr>
+                      <th>Product ID</th>
+                      <th>Product Name</th>
+                      <th>Current Stock</th>
+                      <th>Low Stock Alert</th>
+                      <th>Last Updated</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>P001</td>
+                      <td>Laptop Model X</td>
+                      <td>120</td>
+                      <td><span className="badge bg-success">OK</span></td>
+                      <td>2025-09-27</td>
+                    </tr>
+                    <tr>
+                      <td>P002</td>
+                      <td>Smart Watch Z</td>
+                      <td>5</td>
+                      <td><span className="badge bg-danger">Low Stock</span></td>
+                      <td>2025-09-27</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </section>
         </div>
-    );
+        <Footer />
+      </div>
+    </div>
+  );
 };
 
-export default Sidebar;
+export default InventoryStock;
