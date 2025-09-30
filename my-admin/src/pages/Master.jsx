@@ -66,7 +66,7 @@ const Master = () => {
               <div className="col-lg-3 col-6">
                 <div className="small-box bg-danger">
                   <div className="inner">
-                    <h3>65</h3>
+                    <h3>75</h3>
                     <p>Customers</p>
                   </div>
                   <div className="icon"><i className="fas fa-users"></i></div>
