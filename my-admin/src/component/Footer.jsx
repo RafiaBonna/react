@@ -9,7 +9,7 @@ const Footer = () => {
           <strong>
             Copyright © 2025 
           </strong>{" "}
-          <b>All rights reserved by Rafia Hawlader.</b>
+          <b>All rights reserved by Rafia Hawlader</b>
         </footer>
         {/* Control Sidebar */}
         <aside className="control-sidebar control-sidebar-dark">
