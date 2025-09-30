@@ -109,7 +109,6 @@ const Master = () => {
                       <span>Mar</span>
                       <span>Apr</span>
                       <span>May</span>
-                      <span>Jun</span>
                     </div>
                   </div>
                 </div>
