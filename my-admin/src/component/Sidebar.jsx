@@ -5,15 +5,14 @@ const Sidebar = () => {
         <div>
             <aside className="main-sidebar sidebar-dark-primary elevation-4">
           {/* Brand Logo */}
-          <a href="../../index3.html" className="brand-link">
-            <img
-              src="assets-admin/dist/img/AdminLTELogo.png"
-              alt="AdminLTE Logo"
-              className="brand-image img-circle elevation-3"
-              style={{ opacity: ".8" }}
-            />
-            <span className="brand-text font-weight-light">BuyBuddy</span>
-          </a>
+          <a href="/" className="brand-link" style={{ padding: "0" }}>
+  <img
+    src="assets-admin/dist/img/logo_white.svg"
+    alt="Logo"
+    style={{ width: "80%", height: "auto", display: "block", objectFit: "contain" }}
+  />
+</a>
+
           {/* Sidebar */}
           <div className="sidebar">
             {/* Sidebar user (optional) */}
@@ -27,7 +26,7 @@ const Sidebar = () => {
               </div>
               <div className="info">
                 <a href="#" className="d-block">
-                  Rafia Hawlader
+                 <h5>Admin Dashboard</h5>
                 </a>
               </div>
             </div>
@@ -106,7 +105,7 @@ const Sidebar = () => {
                 </li>
                 
                 {/* === CATALOG MENU === */}
-                <li className="nav-header">PRODUCT CATALOG</li>
+                
                 <li className="nav-item">
                   <a href="#" className="nav-link">
                     <i className="nav-icon fas fa-box-open" />
@@ -139,7 +138,7 @@ const Sidebar = () => {
                 {/* ================================= */}
 
                 {/* === ORDERS MENU === */}
-                <li className="nav-header">ORDER MANAGEMENT</li>
+                
                 <li className="nav-item has-treeview">
                   <a href="#" className="nav-link">
                     <i className="nav-icon fas fa-shopping-cart" />
@@ -166,7 +165,7 @@ const Sidebar = () => {
                 {/* ================================= */}
 
                 {/* === INVENTORY MENU === */}
-                <li className="nav-header">INVENTORY MANAGEMENT</li>
+                
                 <li className="nav-item has-treeview">
                   <a href="#" className="nav-link">
                     <i className="nav-icon fas fa-warehouse" />
@@ -198,7 +197,7 @@ const Sidebar = () => {
                 </li>
                 {/* ================================== */}
                 {/* === FINANCE MENU (2 items: Invoices & Refunds) === */}
-                <li className="nav-header">FINANCE & ACCOUNTING</li>
+                
                 <li className="nav-item has-treeview">
                   <a href="#" className="nav-link">
                     <i className="nav-icon fas fa-dollar-sign" />
@@ -226,7 +225,7 @@ const Sidebar = () => {
                 
 
                 {/* === REPORTS MENU === */}
-                <li className="nav-header">REPORTING & ANALYTICS</li>
+               
                 <li className="nav-item has-treeview">
                   <a href="#" className="nav-link">
                     <i className="nav-icon fas fa-chart-line" />
@@ -259,9 +258,14 @@ const Sidebar = () => {
                
                 {/* ================================== */}
 
-                <li className="nav-header">MISCELLANEOUS</li>
-               
-                <li className="nav-header">MULTI LEVEL EXAMPLE</li>
+{/* Logout Menu */}
+<li className="nav-item">
+  <a href="/login" className="nav-link">
+    <i className="nav-icon fas fa-sign-out-alt" />
+    <p>Logout</p>
+  </a>
+</li>
+
                
                
               </ul>
